@@ -15,47 +15,59 @@ const Page = () => {
 <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold'>Weather</h1>
 <p>Current conditions and forecast</p>
         </div>
-<div className='mt-10'>
-        <div className='bg-blue-300/30 px-10 py-5 rounded-lg'>
+<div className='mt-10 w-[100%] overflow-scroll scrollbar-hide lg:w-[60%] h-100'>
+        <div className='bg-blue-300/40 px-10 py-5 rounded-lg'>
           <div className='flex space-x-2 items-center text-gray-200'>
 <IoLocationOutline size={20}/>
 <p className='text-lg'>San Francisco, CA</p>
           </div>
-<div>
+<div className='flex flex-col'>
   <h1 className='text-white text-7xl mt-10'>22°</h1>
   <p className='text-2xl text-white'>Partly Cloudy</p>
   <p className='text-lg text-gray-300'>H:24° L:18°</p>
 </div>
 
-<div>
-
-  <div>
-<p><RiCloudWindyLine/></p>
+<div className='flex grid-cols-2 gap-3 mt-10'>
+  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+  <div className='flex space-x-2 text-gray-300 items-center'>
+<RiCloudWindyLine size={20}/>
     <p>Wind</p>
-    <p>12 km/h</p>
+</div>
+
+    <p className='text-2xl mt-3'>12 km/h</p>
   </div>
 
-  <div>
-<p><FaRegEye/></p>
-    <p>Visibility</p>
-    <p>10 km</p>
+  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+    <div className='flex space-x-2 text-gray-300 items-center'>
+<FaRegEye  />
+    <p >Visibility</p>
+    </div>
+    <p className='text-2xl mt-3'>10 km</p>
   </div>
-  <div>
-<p><WiHumidity/></p>
+
+
+  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+    <div className='flex space-x-2 text-gray-300 items-center'>
+<WiHumidity size={20}/>
     <p>Humidity</p>
-    <p>65%</p>
+    </div>
+    
+    <p className='text-2xl mt-3'>65%</p>
   </div>
 
-  <div>
-<p><BsStopwatch/></p>
+  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+  <div className='flex space-x-2 text-gray-300 items-center'>
+<BsStopwatch/>
     <p>Pressure</p>
-    <p>1013 mb</p>
+    </div>
+    <p className='text-2xl mt-3'>1013 mb</p>
   </div>
 </div>
         </div>
 
 
         </div>
+
       </div>
     </div>
   )
