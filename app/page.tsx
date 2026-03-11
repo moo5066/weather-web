@@ -4,15 +4,19 @@ import { RiCloudWindyLine } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
 import { BsStopwatch } from "react-icons/bs";
+ import { CiCloud } from "react-icons/ci";
+ import { IoSunnyOutline } from "react-icons/io5";
+
+
 
 
 
 const Page = () => {
   return (
-    <div className='bg-blue-500 w-full h-screen lg:px-[20%] px-10 py-10'>
+    <div className='bg-blue-500 w-full min-h-screen lg:px-[20%] px-10 py-10'>
       <div>
         <div>
-<h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold'>Weather</h1>
+<h1 className='text-4xl text-white font-bold'>Weather</h1>
 <p>Current conditions and forecast</p>
         </div>
 <div  className='mt-10 w-full lg:w-[40%]'>
@@ -65,8 +69,47 @@ const Page = () => {
         </div>
 
 
-        </div>
+       
 
+        <div className='bg-blue-300/40 mt-20 px-10 py-5 rounded-lg'>
+          <h1 className='font-semibold text-xl'>Hourly Forecast</h1>
+ 
+          <div className='flex gap-6 mt-5 overflow-x-auto pb-4'>
+
+          <div className=' text-xl flex flex-col gap-3 items-center bg-blue-300/20 py-5 px-4 rounded-lg'>
+<p >Now</p>
+<CiCloud  size={40}/>
+<p>22°</p>
+          </div>
+
+          <div className=' text-xl flex flex-col gap-3 items-center bg-blue-300/20 py-5 px-4 rounded-lg'>
+<p>11 AM</p>
+<IoSunnyOutline size={40} className="text-yellow-400"/>
+<p>23°</p>
+          </div>
+
+          <div className=' text-xl flex flex-col gap-3 items-center bg-blue-300/20 py-5 px-4 rounded-lg'>
+<p>12 PM</p>
+<IoSunnyOutline size={40} className="text-yellow-400"/>
+<p>24°</p>
+          </div>
+
+          <div className=' text-xl flex flex-col gap-3 items-center bg-blue-300/20 py-5 px-4 rounded-lg'>
+<p>1 PM</p>
+<IoSunnyOutline size={40} className="text-yellow-400"/>
+<p>24°</p>
+          </div>
+
+          <div className=' text-xl flex flex-col gap-3 items-center bg-blue-300/20 py-5 px-4 rounded-lg'>
+<p>2 PM</p>
+<CiCloud size={40}/>
+<p>23°</p>
+          </div>
+    
+
+          </div>
+        </div>
+ </div>
       </div>
     </div>
   )
