@@ -15,7 +15,7 @@ const Page = () => {
 <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold'>Weather</h1>
 <p>Current conditions and forecast</p>
         </div>
-<div className='mt-10 w-[100%] overflow-scroll scrollbar-hide lg:w-[60%] h-100'>
+<div  className='mt-10 w-full lg:w-[40%]'>
         <div className='bg-blue-300/40 px-10 py-5 rounded-lg'>
           <div className='flex space-x-2 items-center text-gray-200'>
 <IoLocationOutline size={20}/>
@@ -27,17 +27,16 @@ const Page = () => {
   <p className='text-lg text-gray-300'>H:24° L:18°</p>
 </div>
 
-<div className='flex grid-cols-2 gap-3 mt-10'>
-  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+<div className='grid grid-cols-2 gap-4 mt-10 lg:mt-20'>
+  <div className='bg-blue-300/40 p-2 rounded-lg'>
   <div className='flex space-x-2 text-gray-300 items-center'>
 <RiCloudWindyLine size={20}/>
     <p>Wind</p>
 </div>
-
     <p className='text-2xl mt-3'>12 km/h</p>
   </div>
 
-  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+  <div className='bg-blue-300/40 p-2 rounded-lg'>
     <div className='flex space-x-2 text-gray-300 items-center'>
 <FaRegEye  />
     <p >Visibility</p>
@@ -46,7 +45,7 @@ const Page = () => {
   </div>
 
 
-  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+  <div className='bg-blue-300/40 p-2 rounded-lg'>
     <div className='flex space-x-2 text-gray-300 items-center'>
 <WiHumidity size={20}/>
     <p>Humidity</p>
@@ -55,7 +54,7 @@ const Page = () => {
     <p className='text-2xl mt-3'>65%</p>
   </div>
 
-  <div className='bg-blue-300/40 p-2 rounded-lg w-[50%]'>
+  <div className='bg-blue-300/40 p-2 rounded-lg'>
   <div className='flex space-x-2 text-gray-300 items-center'>
 <BsStopwatch/>
     <p>Pressure</p>
