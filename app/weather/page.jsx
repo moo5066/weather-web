@@ -70,8 +70,7 @@ const Page = () => {
         </div>
 
 
-       
-
+               <div className='flex flex-col'>
         <div className='bg-blue-300/40 mt-10 lg:mt-0 px-10 py-5 rounded-lg lg:flex-1 w-full min-w-0'>
           <h1 className='font-semibold text-xl'>Hourly Forecast</h1>
  
@@ -127,7 +126,72 @@ const Page = () => {
           </div>
 
           </div>
-        </div>
+</div>
+
+        
+  <div className='mt-5 bg-blue-300/40 px-10 p-3 rounded-lg'>
+  <div>
+    <h2 className='text-lg font-semibold'>7-Day Forecast</h2>
+<div className='mt-5'>
+    <div className='flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Today</h1>
+<CiCloud size={30}/>
+<p>22° <span className='text-gray-400'>18°</span></p>
+    </div>
+
+    <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Tuesday</h1>
+<FiCloudRain size={30}/>
+<p>21° <span className='text-gray-400'>16°</span></p>
+    </div>
+
+    <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Wednesday</h1>
+<FiCloudRain size={30}/>
+<p>23° <span className='text-gray-400'>17°</span></p>
+    </div>
+
+    <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Thursday</h1>
+<IoSunnyOutline size={30}/>
+<p>26° <span className='text-gray-400'>19°</span></p>
+    </div>
+
+
+  <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Friday</h1>
+<IoSunnyOutline size={30}/>
+<p>27° <span className='text-gray-400'>20°</span></p>
+    </div>
+
+  <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Saturday</h1>
+<CiCloud size={30}/>
+<p>25° <span className='text-gray-400'>19°</span></p>
+    </div>
+
+      <div className=' mt-5 flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
+<h1 className='font-semibold'>Sunday</h1>
+<FiCloudRain size={30}/>
+<p>22° <span className='text-gray-400'>17°</span></p>
+    </div>
+</div>
+    </div>
+  </div>
+
+
+
+</div>
+
+       
+
+
+
+
+
+
+
+
  </div>
       </div>
     </div>
