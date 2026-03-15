@@ -132,7 +132,7 @@ const Page = () => {
   <div className='mt-5 bg-blue-300/40 px-10 p-3 rounded-lg'>
   <div>
     <h2 className='text-lg font-semibold'>7-Day Forecast</h2>
-<div className='mt-5'>
+<div className='mt-5 flex flex-col gap-2'>
     <div className='flex justify-between border p-3 border-blue-300/40 shadow-lg rounded-lg'>
 <h1 className='font-semibold'>Today</h1>
 <CiCloud size={30}/>
